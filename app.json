@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "loading-animation-expo",
+    "slug": "loading-animation-expo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "loading-animation-expo"
+}
