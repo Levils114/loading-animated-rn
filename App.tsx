@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Loading from './src/components/Loading';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar translucent/>
+      <Loading size={100}/>
+      <Text style={styles.loadingLabel}>Loading</Text>
     </View>
   );
 }
@@ -14,8 +16,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#010100',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  loadingLabel: {
+    color: "#FFF",
+    marginTop: 24,
+  }
 });
